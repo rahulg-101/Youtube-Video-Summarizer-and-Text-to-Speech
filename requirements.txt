@@ -1,0 +1,11 @@
+numpy
+pandas
+from-root
+nltk
+transformers
+datasets
+rouge_score
+contractions
+setuptools
+wandb
+gradio
