@@ -2,4 +2,8 @@ from dataclasses import dataclass
 
 @dataclass
 class DataIngestionArtifact:
-    data_zip_file_path:str
+    data_ingestion_artifact:str
+
+@dataclass
+class DataTransformArtifact:
+    data_transform_artifact:str

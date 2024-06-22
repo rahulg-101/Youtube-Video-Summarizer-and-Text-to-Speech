@@ -8,4 +8,26 @@ this is useful when you want to change your directories or URL from which you ar
 
 DATA_INGESTION_DIR_NAME = "data_ingestion"      # Store unzipped data in this directory
 
+DATA_FILE_NAME = 'tmp_en_sum_4407145a-6de3-418f-95a1-f82ff2c470ee.tar.bz2'
+
+"""
+Data Transformation related constant start with DATA_TRANSFORMATION Var Name
+"""
+DATA_TRANSFORM_DIR = "data_transformation"
+
+TRAIN_TRANSCRIPT = 'text\sum_train\\tran.tok.txt'
+TRAIN_SUMMARY = 'text\sum_train\desc.tok.txt'
+
+TEST_TRANSCRIPT = 'text\sum_devtest\\tran.tok.txt'
+TEST_SUMMARY = 'text\sum_devtest\desc.tok.txt'
+
+VAL_TRANSCRIPT = 'text\sum_cv\\tran.tok.txt'
+VAL_SUMMARY = 'text\sum_cv\desc.tok.txt'
+
+
+
+
+
+
+
 
