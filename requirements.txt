@@ -13,4 +13,5 @@ evaluate
 torch
 ml_dtypes
 gtts
+youtube_transcript_api
 -e .
