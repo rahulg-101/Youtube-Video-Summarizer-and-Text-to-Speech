@@ -4,7 +4,8 @@ from contractions import contractions_dict
 import re
 import string
 import unicodedata
-import evaluate
+from nltk.tokenize import sent_tokenize
+
 
 
 def extract_pandas_df(transcript,description):
@@ -130,4 +131,6 @@ def clean_dataset(ds):
     return ds
 
 
-rouge_score = evaluate.load("rouge")
+
+
+

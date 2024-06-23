@@ -12,5 +12,5 @@ gradio
 evaluate
 torch
 ml_dtypes
-
+gtts
 -e .

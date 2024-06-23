@@ -57,6 +57,7 @@ class ModelTrainer:
             data = self.load_data()
             final_data = data.map(preprocess_function, batched =True,
                         remove_columns=['Video_id', 'Vid_Transcript', 'Vid_summary'])
+            tokenizer.save()
             return final_data
         
         except Exception as e:
