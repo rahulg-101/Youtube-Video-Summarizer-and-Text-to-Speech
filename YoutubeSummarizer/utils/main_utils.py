@@ -4,6 +4,7 @@ from contractions import contractions_dict
 import re
 import string
 import unicodedata
+import evaluate
 
 
 def extract_pandas_df(transcript,description):
@@ -127,3 +128,6 @@ def clean_dataset(ds):
     ds = ds.map(lambda x: {"Vid_Transcript": [clean_text(o) for o in x["Vid_Transcript"]]}, batched=True)
     
     return ds
+
+
+rouge_score = evaluate.load("rouge")

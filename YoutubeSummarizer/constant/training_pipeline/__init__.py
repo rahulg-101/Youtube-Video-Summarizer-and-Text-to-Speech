@@ -25,9 +25,17 @@ VAL_TRANSCRIPT = 'text\sum_cv\\tran.tok.txt'
 VAL_SUMMARY = 'text\sum_cv\desc.tok.txt'
 
 
+"""
 
+Model trainer related consstant start with MODEL_TRAINER VAR Name
+"""
 
+MODEL_TRAINER_DIR_NAME = "model_trainer"    # Create model_trainer folder
 
+MODEL_TRAINER_CHECKPOINT = "facebook/bart-large-cnn"
 
+MODEL_TRAINER_MAX_INPUT_LENGTH = 512
+MODEL_TRAINER_MAX_TARGET_LENGTH = 30
 
-
+MODEL_TRAINER_BATCH_SIZE = 4
+MODEL_TRAINER_EPOCH = 5

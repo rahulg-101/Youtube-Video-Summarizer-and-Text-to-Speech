@@ -25,3 +25,14 @@ class DataTransformConfig:
     test_summ = TEST_SUMMARY
     val_trans =VAL_TRANSCRIPT
     val_summ = VAL_SUMMARY
+
+@dataclass
+class ModelTrainingConfig:
+    model_trainer_dir = os.path.join(training_pipeline_config.artifacts_dir,MODEL_TRAINER_DIR_NAME)
+
+    model_checkpoint = MODEL_TRAINER_CHECKPOINT
+    max_input_length = MODEL_TRAINER_MAX_INPUT_LENGTH
+    max_target_length = MODEL_TRAINER_MAX_TARGET_LENGTH
+
+    batch_size = MODEL_TRAINER_BATCH_SIZE
+    epochs = MODEL_TRAINER_EPOCH

@@ -1,10 +1,11 @@
 import os,sys
 from YoutubeSummarizer.components.data_ingestion import DataIngestion
 from YoutubeSummarizer.components.data_transformation import DataTransform
+from YoutubeSummarizer.components.model_trainer import ModelTrainer
 
 
-from YoutubeSummarizer.entity.artifacts_entity import DataIngestionArtifact,DataTransformArtifact
-from YoutubeSummarizer.entity.config_entity import DataIngestionConfig,DataTransformConfig
+from YoutubeSummarizer.entity.artifacts_entity import DataIngestionArtifact,DataTransformArtifact,ModelTrainingArtifact
+from YoutubeSummarizer.entity.config_entity import DataIngestionConfig,DataTransformConfig,ModelTrainingConfig
 
 from YoutubeSummarizer.logger import logging
 from YoutubeSummarizer.exception import CustomException
@@ -45,3 +46,24 @@ class TrainingPipeline():
         
         except Exception as e:
             raise CustomException(e,sys)
+        
+    def start_model_trainer(self, 
+                            data_transform_artifact = DataTransformArtifact,
+                            model_trainer_config = ModelTrainingConfig()):
+        
+        try:
+            logging.info("Entered the start_model_trainer method of TrainingPipeline class")
+            logging.info("Starting the training process")
+
+            model_trainer = ModelTrainer(data_transform_artifact=data_transform_artifact,
+                                        model_trainer_config=model_trainer_config)
+            
+            model_training_artifact = model_trainer.model_trainer()
+            logging.info("Model training is completed")
+            return model_training_artifact
+
+        except Exception as e:
+            raise CustomException(e,sys)
+
+        
+

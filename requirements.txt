@@ -1,11 +1,16 @@
-numpy
+numpy==1.23.5
 pandas
 from-root
 nltk
-transformers
+transformers[torch]
 datasets
 rouge_score
 contractions
 setuptools
 wandb
 gradio
+evaluate
+torch
+ml_dtypes
+
+-e .

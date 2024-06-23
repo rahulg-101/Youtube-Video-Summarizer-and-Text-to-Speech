@@ -7,3 +7,7 @@ class DataIngestionArtifact:
 @dataclass
 class DataTransformArtifact:
     data_transform_artifact:str
+
+@dataclass
+class ModelTrainingArtifact:
+    model_training_artifact:str
