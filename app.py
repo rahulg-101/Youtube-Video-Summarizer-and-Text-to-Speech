@@ -87,6 +87,7 @@ def text_to_speech(sentence):
 # Gradio interface
 with gr.Blocks() as demo:
     gr.Markdown("<h1 style='text-align: center;'>Youtube How-to Videos Text Summarizer with Text-to-Speech</h1>")
+    
     gr.Markdown("This application is specifically fine-tuned to generate summaries of 'How-to' instructional videos. Currently, it only supports videos with English transcripts and may produce inappropriate summaries, as I have fine-tuned the model for just one epoch due to limited computational resources. Additionally, you can create audio speech for the generated summaries in the Text-to-Speech tab.")
     with gr.Tabs():
         
