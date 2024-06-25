@@ -92,4 +92,14 @@ We welcome contributions to improve and expand this project. Please feel free to
 
 ## Acknowledgements
 
-- The authors of the How2 dataset
+- The authors of the How2 dataset (Please cite the following paper in all academic work that uses this dataset:)
+```
+@inproceedings{sanabria18how2,
+  title = {{How2:} A Large-scale Dataset For Multimodal Language Understanding},
+  author = {Sanabria, Ramon and Caglayan, Ozan and Palaskar, Shruti and Elliott, Desmond and Barrault, Lo\"ic and Specia, Lucia and Metze, Florian},
+  booktitle = {Proceedings of the Workshop on Visually Grounded Interaction and Language (ViGIL)},
+  year = {2018},
+  organization={NeurIPS},
+  url = {http://arxiv.org/abs/1811.00347}
+}
+```
